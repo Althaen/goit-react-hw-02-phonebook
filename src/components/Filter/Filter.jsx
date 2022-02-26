@@ -1,6 +1,6 @@
 import { Component } from 'react';
 
-export default class SearchFilterInput extends Component {
+export default class Filter extends Component {
   onSearchInput = event => {
     // console.log(this.state.filter)
     const { value } = event.currentTarget;
@@ -13,7 +13,6 @@ export default class SearchFilterInput extends Component {
         name="filter"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-        // value={this.state.filter}
         onChange={this.onSearchInput}
         required
       />
